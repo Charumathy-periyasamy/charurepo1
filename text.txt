@@ -1,10 +1,1 @@
- Volume in drive C is Windows
- Volume Serial Number is D69E-B34E
-
- Directory of C:\Users\ELCOT\Desktop\MyProject
-
-29-07-2022  22:53    <DIR>          .
-29-07-2022  22:53    <DIR>          ..
-29-07-2022  22:53                 0 text.txt
-               1 File(s)              0 bytes
-               2 Dir(s)  12,963,889,152 bytes free
+hatgi
