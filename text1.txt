@@ -4,7 +4,7 @@
  Directory of C:\Users\ELCOT\Desktop\MyProject
 
 29-07-2022  22:57    <DIR>          .
-29-07-2022  22:57    <DIR>          ..
+29-07-2022  22:57    <DIR>XVZIGJl?          ..
 29-07-2022  22:56                 5 text.txt
 29-07-2022  22:57                 0 text1.txt
                2 File(s)              5 bytes
