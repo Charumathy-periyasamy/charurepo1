@@ -6191,3 +6191,4 @@ java.util.ConcurrentModificationException: null
 2022-08-17 18:51:53,950 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ELCOT\Documents\Selenium\MavenProject\src\main\resources
 2022-08-17 18:51:53,965 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-08-17 18:51:53,966 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ELCOT\Documents\Selenium\MavenProject\src\test\resources
+2022-08-23 11:57:16,920 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
