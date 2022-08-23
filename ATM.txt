@@ -1,0 +1,45 @@
+QUESTION: Pooja would like to withdraw X $US from an ATM.
+ The cash machine will only accept the transaction if X is a multiple of 5, and Pooja's account balance has enough cash to perform the withdrawal transaction (including bank charges). For each successful withdrawal the bank charges 0.50 $US.
+ Calculate Pooja's account balance after an attempted transaction.
+
+
+CODE:
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+public class Main
+{
+    static int withdrawamount;
+    double accountbalance =9600;
+    double crrbalance;
+    
+        
+     public double actbalance(int amt)
+     {
+         crrbalance = accountbalance-((double)amt-0.5);
+        // bl = accountbalance-crrbalance;
+         return crrbalance;
+     }
+	public static void main(String[] args) {
+	//	System.out.println("Hello World");
+	Scanner sc = new Scanner (System.in);
+	 System.out.println("enter the amount to withdraw");
+	 withdrawamount = sc.nextInt();
+	 if((withdrawamount%5)==0)
+	 {
+	      System.out.println("hey! you can withdraw the money");
+	        Main m= new Main();
+	        double balance = m.actbalance(withdrawamount);
+	        System.out.println("Current balance:"+ balance);
+	 }
+	 else{
+	         System.out.println("Amount is not multiple of 5");
+	 }
+	}
+}

@@ -1,0 +1,150 @@
+
+/*
+Online Java - IDE, Code Editor, Compiler
+
+Online Java is a quick and easy tool that helps you to build, compile, test your programs online.
+*/
+
+public class Main
+{ static int i =10;
+ static int count = 0;
+    public static void main(String[] args) {
+       // break statement:
+                    /*for(int j=0;j<=10;j++)
+                    {
+                        count = count +1;
+                        System.out.println("count: "+ count);
+                     if(j == 5)
+                     {
+                         System.out.println("going to exit when j is " + j);
+                         break;
+                         // System.out.println("will be unexecutable");
+                     }
+                    }
+                     */
+       // break statement inside the for loop and inner for loop
+       /*
+       for(int j=0;j<=10;j++)
+                    {
+                        count = count +1;
+                        System.out.println("count: "+ count);
+                         for(int i =0; i<=2; i++)
+                         {
+                             System.out.println("i: "+ i);
+                             break;
+                         }
+                    }*/
+                     
+       // break statement inside a switch statement -- exits only the switch statement
+       /*
+       for(int j=0;j<=5;j++)
+                    {
+                        count = count +1;
+                        System.out.println("count: "+ count);
+                      switch(j)
+                      {
+                          case 4:  System.out.println("executed");
+                          break;
+                      }
+                    }*/
+                    
+        // labeld break statement: outer and inner for loop
+/*
+            x:  for(int i=0;i<=5;i++)
+              {
+                  count = count +1;
+                  System.out.println("count: "+count);
+                  for(int j =0;j<=3;j++)
+                  {
+                    System.out.println("inner loop");
+                    break x; 
+                  }
+              }
+*/       
+
+// labeld break statement : if insider the for loop
+
+         /*
+            x:  for(int i=0;i<=5;i++)
+              {
+                  count = count +1;
+                  System.out.println("count: " + count);
+                  if(i == 3){ 
+                    System.out.println("inside if");
+                    break x; 
+                  }
+              }*/
+
+// coninue statement -- while loop
+ /*   int s=0;
+                
+                 while (s<=2)
+                 {
+                     s = s+1;
+                     count = count+1;
+                     System.out.println("s: "+ s);
+                     if(s==1)
+                     {
+                         System.out.println("inside if statement");
+                         continue;
+                     }
+                     
+                     
+                      System.out.println("rest of the code in while loop");
+                 }
+ */       
+ 
+ // continue statement with for loop
+ 
+                     /*for(int i=0;i<=3;i++)
+                     {
+                         count = count + 1;
+                         System.out.println("count: "+ count);
+                         System.out.println("outer loop");
+                         for(int j =0; j<=2;j++)
+                         {
+                             System.out.println("inner loop");
+                             continue;
+                            
+                         }
+                         System.out.println("rest of tghe loop");
+                     }*/
+ 
+ // continue statement inside the for and if 
+ /*
+ for(int i=0;i<=3;i++)
+                     {
+                         count = count + 1;
+                         System.out.println("count: "+ count);
+                         System.out.println("outer loop");
+                         if(i == 2){
+                         
+                             System.out.println("inner loop");
+                             continue;
+                            
+                         }
+                         System.out.println("rest of tghe loop");
+                     }
+                      */
+                      
+    // labeld continue
+    
+    
+                       x:  for(int i=0;i<=3;i++)
+                     {
+                         count = count + 1;
+                         System.out.println("count: "+ count);
+                         System.out.println("outer loop");
+                         for(int j =0; j<=1;j++)
+                         {
+                             System.out.println("inner loop");
+                             System.out.println("J " + j);
+                             continue x;
+                            
+                         }
+                         System.out.println("rest of tghe loop");
+                     }
+                      
+                      
+    }
+}

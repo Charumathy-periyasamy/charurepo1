@@ -1,0 +1,87 @@
+SUBSTIRNG()
+
+CODE:
+
+public class Main
+{
+    void method(String s)
+    {
+        System.out.println("inside method: " +s);
+    }
+	public static void main(String[] args) {
+	//	System.out.println("Hello World");
+		String s = "javatttpoint";
+	Main m = new Main();
+	m.method(s.substring(5));
+	
+
+	System.out.println(s.substring(5));
+	System.out.println(s.substring(0,9));
+	System.out.println(s.substring(1,1)); // prints emptyspace
+//	System.out.println(s.substring(-1,9)); a// throwing StringIndexOutOfBoundsException Exception:
+	System.out.println(s.substring(0,0)); // prints emptyspace
+//	System.out.println(s.substring(14,9)); // throwing StringIndexOutOfBoundsException Exception:
+	
+//	System.out.println(s.substring(0,-1));  // throwing StringIndexOutOfBoundsException Exception:
+		System.out.println(s.substring(0,1));
+	
+	
+	}
+}
+
+
+
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+   static void paliandrom(String s1, String s2)
+    { 
+          System.out.println("s1: "+  s1 + " s2: "+ s2);
+      int  lengthofs2 = s2.length();
+      if(s1.charAt(0)== s2.charAt(0))
+      {
+          System.out.println("s1.charAt(0): " + s1.charAt(0)+ "s2.charAt(0):" + s1.charAt(0));
+          
+      }
+      else{
+           System.out.println("Thes string is not a paliandrom");
+      }
+     
+       
+    }
+	public static void main(String[] args) {
+	//	System.out.println("Hello World");
+	
+	String s ="madham";
+
+	int length = s.length();
+		 System.out.println(s.charAt(length-1));
+	
+	if(s.charAt(0) == s.charAt(length-1))
+	{
+	   
+	  
+	    	for(int i =1;i<s.length();i++)
+	{
+	    System.out.println("came inside the for loop");
+
+	     paliandrom(s.substring(i),s.substring(length-(i+1)));
+	}
+
+	   
+	}
+	else{
+	     System.out.println("Thes string is not a paliandrom");
+	}
+	
+	
+	}
+}

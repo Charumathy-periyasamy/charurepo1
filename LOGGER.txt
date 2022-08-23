@@ -1,0 +1,23 @@
+1. What is boilerplate code -- Boilerplate is a term used to describe code that is repeated in many parts of an application with little alteration. 
+2.   For example, the Getter/Setter in the JavaBean model class is a boilerplate code. We can reduce such boilerplate code by using the @Getter/@Setter annotation of Lombok.
+
+eg): original code: public class User {
+    private Long id;
+    ...
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
+    ...
+}
+
+
+OPTIMIZED CODE:
+@Getter
+@Setter
+public class User {
+    private Long id;
+    ...
+}

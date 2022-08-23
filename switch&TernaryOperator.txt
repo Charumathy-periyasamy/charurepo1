@@ -1,0 +1,106 @@
+import java.util.Scanner;
+
+public class Main
+
+{
+
+    static int n;
+
+    static int[] arr;
+
+    
+
+    static double tamil;
+
+    static double english;
+
+    static double maths;
+    static double science;
+    static double social;
+    static double total;
+    static double avg;
+    int a = 1;
+
+     Main( double tamil, double english, double maths, double science, double social)
+
+    {
+        this(tamil, english, maths, science, social,total);
+      
+
+    }
+    Main(double tamil, double english, double maths, double science, double social, double total)
+    {/*
+        this.tamil = tamil;
+      this.english = english;
+      this.maths = maths;
+      this.science= science;
+      this.social = social;*/
+      
+     this.total = ((this.tamil = tamil)+ (this.english = english)+ (this.maths = maths)+(this.science= science) + (this.social = social));
+     avg=5;
+    }
+    
+   double usigswitch()
+   {
+       
+     switch(a)
+     {
+         case 1: System.out.println("good score");
+         break;
+          case 2: System.out.println("good score");
+          break;
+     }
+     return avg;
+       
+   }
+    
+
+	public static void main(String[] args) {
+
+	
+
+	Scanner sc = new Scanner(System.in);
+
+	System.out.println("Enter the number of array elements : ");
+
+	n = sc.nextInt();
+
+	 arr = new int[n];
+
+	System.out.println("n " +n);
+
+	System.out.println("Enter the arrary elements: ");
+
+	 
+
+	 for(int i=0;i<n;i++)
+
+	 {
+
+	     arr[i] = sc.nextInt();
+
+	 }
+
+	// System.out.println(arr);
+
+	for(int a: arr)
+
+	{
+
+System.out.println(a);
+	    
+	}
+
+  Main m = new Main(65,97,27,86,90);
+
+   System.out.println("tamil: "+ tamil);
+       System.out.println("english: "+ english); 
+      //  System.out.println("tamil: "+ newtamil);
+     //  System.out.println("english: "+ newenglish); 
+
+    System.out.println( "hello" + ((total>300) ? ("good score"):("need to improve")) + "tk");
+   avg = m.usigswitch();
+
+}
+
+}

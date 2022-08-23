@@ -1,0 +1,61 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+
+
+String stringsplit = "javatt tpoint hellow world";
+ String stringwithoutzero = "ka thadshf ahg";
+ for(String w: stringsplit.split("\\s",0))  // ("\\s",0)-->  it wil split all the strings in the array 
+ {                                          // 
+   System.out.println("//s,0");
+    System.out.println(w);
+ }                                           // the output will be 
+                                         //  'javatt
+                                         //  point 
+                                         //  hellow 
+                                         //  world'
+                                           // ("\\s",1)--> resembles that the string array can have only one value
+                                         // so the output will be  'javatt point hellow world'
+                                        // if I provided -ve value or value greater than the actual length of the 
+                                        // array it is showing the result of '0'
+
+    
+for(String w13: stringsplit.split("o",0)) // ("o",0)--> will remove all the all the 'o's 
+                                           // ("o",1)--> will not remove any thing the string array will have only one value
+{                                         // ("o",2)--> will remove the first 'o' Character.. and split the string into two parts
+     System.out.println("o");        // first part: before 'o' , second part: after 'o'
+    System.out.println( w13);             // ("o",3)-> will remove 1st and second 'o'.. and split the string into 3 .
+}                                       // ("o")--> only regular expression--> will remove all 'o' char and split
+
+for(String w13: stringsplit.split(" ")) // if (" ") --> space is provided as regular expression then the string will get split according to the space
+{                                       // (eg:) --> string = " ja aiiuu iss" --> output: ja
+    System.out.println("spcve");  
+    System.out.println( w13);      //                                                   aiiuu
+}                                    //                                                 iss
+
+for(String w13: stringsplit.split("")) // if ("")-->double quotes is provided without a whitespace , in output
+{                                      // each character of the string will get splint in the separate line
+    System.out.println("");  
+    System.out.println( w13); 
+}
+
+for(String w2: stringwithoutzero.split("o"))  // if the provided regular expression is not in the string then the sting will get print as it
+{
+   System.out.println("o");  
+    System.out.println(w2);
+}
+for(String w13: stringsplit.split("-9",2)) 
+{
+    System.out.println(w13);
+}
+
+	}
+}
