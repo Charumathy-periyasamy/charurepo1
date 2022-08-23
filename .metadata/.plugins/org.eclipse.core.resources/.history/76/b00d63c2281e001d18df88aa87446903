@@ -1,0 +1,12 @@
+package MavenSelenium.MavenProject;
+
+public class SeleniumTestt {
+
+
+	@Test
+	public void seleniumTest1()
+	{
+		
+	}
+	
+}

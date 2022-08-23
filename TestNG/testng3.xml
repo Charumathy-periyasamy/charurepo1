@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+  <test thread-count="5" name="SmokeTest">
+    
+    <groups>    <!-- only smoke cases belongs to the below methods are getting executed, before afte suite tags are not considered -->
+    <run>
+    <include name ="Smoke"/>
+    </run>
+    </groups>
+    <classes>
+      
+      <class name="testng.hello"/>
+      <class name = "testng.carloan2"/>
+       <class name = "testng.carloan3"/>
+        <class name= "testng.homeloan"/>
+      <class name = "testng.carloan">
+      <methods>
+      <include name = "homeloanoncar2"/>   <!--  this method is not grouped as SMOKE still it is executed -->
+      </methods>
+      </class>
+      
+      
+     </classes>
+  </test> <!-- Test -->
+  
+   
+  
+</suite> <!-- Suite -->

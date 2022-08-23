@@ -1,0 +1,5 @@
+package MavenSelenium.MavenProject;
+
+public class AppiumTest {
+
+}

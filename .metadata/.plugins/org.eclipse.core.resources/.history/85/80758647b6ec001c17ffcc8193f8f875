@@ -1,0 +1,64 @@
+package BasicPractisePage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.KeyDownAction;
+import org.testng.Assert;
+
+public class BasicSeleniumFeatures {
+
+	
+
+	static WebDriver driver; 
+	
+	public static void setUp()
+	{
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\Documents\\chromedriver\\chromedriver.exe"); // this code need to be provide inside some method only
+		 
+	    
+	}
+	
+	public static void verifyBasicPageDetails()
+	{
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().window().maximize();
+	String currenturl	= driver.getCurrentUrl(); 	
+	
+	Assert.assertEquals("https://rahulshettyacademy.com/AutomationPractice/", currenturl);
+		
+	System.out.println("Page title " + driver.getTitle());
+	
+	int sizeofRadioButtonField = driver.findElements(By.xpath("//fieldset/label/input[@name='radioButton']")).size();
+
+// 1. click all the radio button using loop radio button
+	
+	for(int i = 1; i<= sizeofRadioButtonField ; i++)
+	{
+		driver.findElement(By.xpath("//fieldset/label["+i+"]/input[@name='radioButton']")).click();
+	}
+	
+// 2. Enter the text 'ind' in capital letter and select the option 'india' in the auto suggestive dropdown
+	
+	Actions a = new Actions(driver);
+	
+	a.moveToElement(driver.findElement(By.cssSelector("input#autocomplete"))).click().keyDown(Keys.SHIFT).sendKeys("ind").doubleClick().sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).click() .build().perform();
+	
+	
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		setUp();
+		driver = new ChromeDriver();
+		verifyBasicPageDetails();
+		
+	}
+
+}
+
+
+

@@ -1,0 +1,11 @@
+Execption faced
+
+-- Exception in thread "main" java.lang.ExceptionInInitializerError
+Caused by: java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from https://chromedriver.storage.googleapis.com/index.html
+----- because I have provided the webdriver.chrome.driver as Webdriver.chrome.driver
+
+
+---- Exception in thread "main" org.openqa.selenium.WebDriverException: target frame detached
+
+---- Exception in thread "main" java.lang.UnsupportedOperationException: You may only deselect options of a multi-select
+--- Exception in thread "main" org.openqa.selenium.ElementNotInteractableException: element not interactable

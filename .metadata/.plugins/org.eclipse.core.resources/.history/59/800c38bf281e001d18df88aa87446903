@@ -1,0 +1,10 @@
+package MavenSelenium.MavenProject;
+
+public class SeleniumTestt {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

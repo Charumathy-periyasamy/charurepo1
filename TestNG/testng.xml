@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel = "tests" thread-count="2" >   <!-- will execute the test module in parallel -->
+
+<listeners>
+<listener class-name = "testng.Listeners" />
+</listeners>
+ <parameter name ="url"  value = "https://rahulshettyacademy.com/locatorspractice/"/>  <!-- passing parameter in suite level  -->
+ 
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testng.hello"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="carloan" parallel = "classes" thread-count="5">  <!-- will execute the classes  in parallel -->
+  
+  <parameter name = "key" value = "jhahfka"/>  <!-- providing parameter in test module level -->
+    <classes>
+ 
+      <class name="testng.carloan">
+      
+       <parameter name = "key" value = "jhahfka"/>  <!--  paramerter on class level -->
+       
+      <methods>
+      <exclude name="home.*"/>   <!--  will exclude the testcases(methods) whoes name is starting with text 'home' -->
+      </methods>
+      </class>
+      <class name = "testng.carloan2"/>
+       <class name = "testng.carloan3"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="homeloan">
+  
+  <parameter name = "homeurl" value = "https://homeurl"/>  <!-- this parameter is valid for only  -->
+     <classes>
+    
+     <class name= "testng.homeloan">
+      <parameter name  ="classlevelurl" value = "https:classlever"/>    <!-- this parameter is valid for only  for this classs  -->
+     <methods>
+    <include name = "homeloan4"/>
+     <exclude name="homeloan2"/>    <!--  will exlcude the particular test -->
+      <include name = "homeloan3"/>  <!--  will include on the particular test -->
+    <include name = "homeloan1"/>
+     </methods>
+     </class>
+     </classes>
+
+  </test> <!-- Test -->
+   
+
+  
+</suite> <!-- Suite -->

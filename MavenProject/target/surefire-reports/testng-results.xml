@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-17T18:51:51 IST" name="Surefire suite" finished-at="2022-08-17T18:51:51 IST" duration-ms="241">
+    <groups>
+    </groups>
+    <test started-at="2022-08-17T18:51:51 IST" name="Surefire test" finished-at="2022-08-17T18:51:51 IST" duration-ms="241">
+      <class name="MavenSelenium.MavenProject.AppiumTest">
+        <test-method signature="AppiumTest1()[pri:0, instance:MavenSelenium.MavenProject.AppiumTest@6bf0219d]" started-at="2022-08-17T18:51:51 IST" name="AppiumTest1" finished-at="2022-08-17T18:51:51 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppiumTest1 -->
+        <test-method signature="AppiumTest2()[pri:0, instance:MavenSelenium.MavenProject.AppiumTest@6bf0219d]" started-at="2022-08-17T18:51:51 IST" name="AppiumTest2" finished-at="2022-08-17T18:51:51 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppiumTest2 -->
+      </class> <!-- MavenSelenium.MavenProject.AppiumTest -->
+      <class name="MavenSelenium.MavenProject.SeleniumTest">
+        <test-method signature="seleniumTest1()[pri:0, instance:MavenSelenium.MavenProject.SeleniumTest@8317c52]" started-at="2022-08-17T18:51:51 IST" name="seleniumTest1" finished-at="2022-08-17T18:51:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumTest1 -->
+        <test-method signature="seleniumTest2()[pri:0, instance:MavenSelenium.MavenProject.SeleniumTest@8317c52]" started-at="2022-08-17T18:51:51 IST" name="seleniumTest2" finished-at="2022-08-17T18:51:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seleniumTest2 -->
+      </class> <!-- MavenSelenium.MavenProject.SeleniumTest -->
+      <class name="MavenSelenium.MavenProject.RestAPITest">
+        <test-method signature="RestAPITest1()[pri:0, instance:MavenSelenium.MavenProject.RestAPITest@78ffe6dc]" started-at="2022-08-17T18:51:51 IST" name="RestAPITest1" finished-at="2022-08-17T18:51:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RestAPITest1 -->
+        <test-method signature="RestAPITest2()[pri:0, instance:MavenSelenium.MavenProject.RestAPITest@78ffe6dc]" started-at="2022-08-17T18:51:51 IST" name="RestAPITest2" finished-at="2022-08-17T18:51:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RestAPITest2 -->
+      </class> <!-- MavenSelenium.MavenProject.RestAPITest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

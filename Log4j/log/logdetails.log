@@ -1,0 +1,3 @@
+2022-08-05 10:32:57,677 DEBUG a.Demo [main] debug log demo
+2022-08-05 10:32:57,683 ERROR a.Demo [main] error log demo
+2022-08-05 10:32:57,683 FATAL a.Demo [main] fatal lof demo

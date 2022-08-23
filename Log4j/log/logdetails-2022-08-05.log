@@ -1,0 +1,9 @@
+2022-08-05 10:32:57,669 INFO a.Demo [main] info log demo
+2022-08-05 10:32:57,675 DEBUG a.Demo [main] debug log demo
+2022-08-05 10:32:57,675 ERROR a.Demo [main] error log demo
+2022-08-05 10:32:57,676 FATAL a.Demo [main] fatal lof demo
+2022-08-05 10:32:57,676 INFO a.Demo [main] info log demo
+2022-08-05 10:32:57,676 DEBUG a.Demo [main] debug log demo
+2022-08-05 10:32:57,676 ERROR a.Demo [main] error log demo
+2022-08-05 10:32:57,676 FATAL a.Demo [main] fatal lof demo
+2022-08-05 10:32:57,676 INFO a.Demo [main] info log demo
